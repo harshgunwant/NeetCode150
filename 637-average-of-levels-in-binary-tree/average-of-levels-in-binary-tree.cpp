@@ -12,6 +12,7 @@
 class Solution {
 public:
     vector<double> averageOfLevels(TreeNode* root) {
+        if(root==nullptr) return {};
         //here we will do a bfs/ level order traversal
         queue<TreeNode*> q;
         q.push(root);
